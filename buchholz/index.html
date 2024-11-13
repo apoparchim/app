@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script>
+      function redirect() {
+        var userAgent = navigator.userAgent;
+
+        if (userAgent.includes("Android")) {
+          platform = "Android";
+          window.location.href =
+            "https://play.google.com/store/apps/details?id=com.apoapp.id108975";
+        } else if (userAgent.includes("iPhone") || userAgent.includes("iPad")) {
+          platform = "iOS";
+          // Redirect link for iOS
+          window.location.href =
+            "https://apps.apple.com/de/app/bucholz-apotheke-parchim/id6636476451";
+        } else {
+          platform = "non-Android or iOS";
+          // Fallback redirect for other platforms
+          window.location.href =
+            "https://play.google.com/store/apps/details?id=com.apoapp.id108975";
+        }
+      }
+      redirect();
+    </script>
+  </head>
+  <body>
+    <div class="boxbh">
+      <div class="container">
+        <span class="circle"></span>
+        <span class="circle"></span>
+        <span class="circle"></span>
+        <span class="circle"></span>
+      </div>
+    </div>
+  </body>
+</html>
